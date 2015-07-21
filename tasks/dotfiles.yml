@@ -23,3 +23,12 @@
     - .vimrc
     - .gvimrc
     - .vimperatorrc
+
+- name: Create symlinks for Karabiner
+  file:
+    src: ~/.dotfiles/mac/{{ item }}
+    dest: ~/Library/Application Support/Karabiner/{{ item }}
+    state: link
+    force: yes
+  with_items:
+    - private.xml
