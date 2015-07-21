@@ -41,7 +41,6 @@
 - name: Install homebrew cask packages
   homebrew_cask: name={{ item }}
   with_items:
-    - android-studio
     - appcleaner
     - atom
     - bettertouchtool
@@ -56,7 +55,6 @@
     - google-chrome
     - google-drive
     - google-japanese-ime
-    - gyazo
     - iterm2
     - karabiner
     - macwinzipper
