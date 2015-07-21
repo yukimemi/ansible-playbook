@@ -1,10 +1,7 @@
 ---
 
-- name: Install powerline font
-  script: ~/powerline-fonts/install.sh
-
 - name: Install ricty font
-  homebrew: { name: 'ricty', install_options: 'powerline', 'patch-in-place' }
+  homebrew: { name: 'ricty', install_options: 'powerline,patch-in-place' }
 - name: Copy ttf files
   copy: src={{ item }} dest=~/Library/Fonts/
   with_fileglob:
