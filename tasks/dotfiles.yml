@@ -1,0 +1,25 @@
+---
+
+- name: Checkout my dotfiles
+  git:
+    repo: git@github.com:yukimemi/dotfiles.git
+    dest: ~/.dotfiles
+
+- name: Create symlinks
+  file:
+    src: ~/.dotfiles/{{ item }}
+    dest: ~/{{ item }}
+    state: link
+    force: yes
+  with_items:
+    - .bashrc
+    - .inputrc
+    - .gemrc
+    - .gitconfig
+    - .gitignore
+    - .peco-snippets
+    - .tmux.conf
+    - .vim
+    - .vimrc
+    - .gvimrc
+   - .vimperatorrc

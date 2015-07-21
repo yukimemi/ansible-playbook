@@ -1,0 +1,75 @@
+---
+
+- name: Update homebrew
+  homebrew: update_homebrew=yes upgrade_all=yes
+
+- name: Tap homebrew repositories
+  homebrew_tap: tap={{ item }}
+  with_items:
+    - sanemat/font
+
+- name: Install homebrew packages
+  homebrew: name={{ item.name }} install_options={{ item.options|default() }}
+  with_items:
+    - { name: 'ansible' }
+    - { name: 'coreutils' }
+    - { name: 'ctags' }
+    - { name: 'exiftool' }
+    - { name: 'ffmpeg' }
+    - { name: 'fontforge' }
+    - { name: 'ghc' }
+    - { name: 'git' }
+    - { name: 'git-now' }
+    - { name: 'lua' }
+    - { name: 'lv' }
+    - { name: 'macvim', install_options: 'with-lua', 'override-system-vim', state: 'head' }
+    - { name: 'mercurial' }
+    - { name: 'mobile-shell' }
+    - { name: 'mplayer' }
+    - { name: 'nkf' }
+    - { name: 'reattach-to-user-namespace' }
+    - { name: 'ssh-copy-id' }
+    - { name: 'tig' }
+    - { name: 'tmux' }
+    - { name: 'tree' }
+    - { name: 'watch' }
+    - { name: 'wget' }
+    - { name: 'youtube-dl' }
+    - { name: 'zsh', install_options: 'disable-etcdir' }
+    - { name: 'zsh-completions' }
+
+- name: Install homebrew cask packages
+  homebrew_cask: name={{ item }}
+  with_items:
+    - android-studio
+    - appcleaner
+    - atom
+    - bettertouchtool
+    - bittorrent-sync
+    - caffeine
+    - clipmenu
+    - dropbox
+    - evernote
+    - firefox-ja
+    - flashlight
+    - flux
+    - google-chrome
+    - google-drive
+    - google-japanese-ime
+    - gyazo
+    - iterm2
+    - karabiner
+    - macwinzipper
+    - makemkv
+    - mplayerx
+    - mysqlworkbench
+    - nosleep
+    - packer
+    - quicksilver
+    - seil
+    - skype
+    - toggldesktop
+    - vagrant
+    - virtualbox
+    - xquartz
+
