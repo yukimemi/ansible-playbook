@@ -22,7 +22,7 @@
     - { name: 'git-now' }
     - { name: 'lua' }
     - { name: 'lv' }
-    - { name: 'macvim', install_options: 'with-lua', 'override-system-vim', state: 'head' }
+    - { name: 'macvim', install_options: 'with-lua,override-system-vim', state: 'head' }
     - { name: 'mercurial' }
     - { name: 'mobile-shell' }
     - { name: 'mplayer' }
@@ -49,7 +49,7 @@
     - clipmenu
     - dropbox
     - evernote
-    - firefox-ja
+    - firefox
     - flashlight
     - flux
     - google-chrome

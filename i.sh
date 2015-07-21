@@ -21,5 +21,5 @@ fi
 brew install python
 brew install ansible
 
-HOMEBREW_CASK_OPTS="--appdir=/Applications" ansible-playbook -v localhost.yml -i hosts
+HOMEBREW_CASK_OPTS="--appdir=/Applications" ansible-playbook localhost.yml -i hosts
 
