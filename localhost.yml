@@ -5,6 +5,4 @@
     - homebrew
     - homebrew-cask
     - font
-  handlers:
-    - font
 
