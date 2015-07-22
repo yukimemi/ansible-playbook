@@ -2,6 +2,7 @@
 
 homebrew_repositories:
   - sanemat/font
+  - b4b4r07/gomi
 
 homebrew_packages:
   - { name: ansible }
@@ -30,5 +31,6 @@ homebrew_packages:
   - { name: youtube-dl }
   - { name: zsh, install_options: disable-etcdir }
   - { name: zsh-completions }
+  - { name: gomi }
 
 
