@@ -1,6 +1,0 @@
----
-
-- include: dotfiles.yml
-- include: brew.yml
-- include: pip.yml
-- include: font.yml

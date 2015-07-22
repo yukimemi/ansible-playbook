@@ -11,18 +11,7 @@
     dest: ~/{{ item }}
     state: link
     force: yes
-  with_items:
-    - .bashrc
-    - .inputrc
-    - .gemrc
-    - .gitconfig
-    - .gitignore
-    - .peco-snippets
-    - .tmux.conf
-    - .vim
-    - .vimrc
-    - .gvimrc
-    - .vimperatorrc
+  with_items: symlinks
 
 - name: Create symlinks for Karabiner
   file:

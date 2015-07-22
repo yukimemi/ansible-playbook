@@ -1,8 +1,8 @@
 - hosts: localhost
   connection: local
-  gather_facts: no
-  tasks:
-    - include: tasks/main.yml
-  handlers:
-    - include: handlers/main.yml
+  roles:
+    - dotfiles
+    - homebrew
+    - homebrew-cask
+    - font
 

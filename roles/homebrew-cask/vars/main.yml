@@ -1,0 +1,34 @@
+---
+
+homebrew_cask_repositories:
+  - caskroom/versions
+
+homebrew_cask_packages:
+  - appcleaner
+  - atom
+  - bettertouchtool
+  - bittorrent-sync
+  - caffeine
+  - clipmenu
+  - dropbox
+  - evernote
+  - firefox
+  - flashlight
+  - flux
+  - google-chrome
+  - google-drive
+  - google-japanese-ime
+  - iterm2
+  - karabiner
+  - macwinzipper
+  - makemkv
+  - mplayerx
+  - nosleep
+  - packer
+  - quicksilver
+  - seil
+  - skype
+  - vagrant
+  - virtualbox
+  - xquartz
+
