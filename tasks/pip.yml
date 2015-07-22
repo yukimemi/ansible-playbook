@@ -1,4 +1,4 @@
 ---
 
 - name: Install powerline-status
-  pip: name=powerline-status extra_args='--user'
+  pip: name=powerline-status extra_args=--user
