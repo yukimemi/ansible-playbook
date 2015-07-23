@@ -9,13 +9,6 @@
   homebrew: update_homebrew=yes
 
 - name: Install/Upgrade Homebrew packages
-  homebrew: >
-    name={{ item.name | default(item) }}
-    state={{ item.state | default('latest') }}
-    install_options={{
-      item.install_options | default() | join(',')
-      if item.install_options is not string
-      else item.install_options
-    }}
+  homebrew: name={{ item.name }} install_options={{ item.options|default() }}
   with_items: homebrew_packages
   when: homebrew_packages
