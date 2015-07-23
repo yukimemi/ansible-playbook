@@ -21,3 +21,4 @@
     force: yes
   with_items:
     - private.xml
+  when: ansible_os_family == "Darwin"
