@@ -4,5 +4,9 @@
   command: pip install --user powerline-status
 
 - name: Create symlink for powerline
-  copy: src=~/.dotfiles/.config/powerline dest=~/.config/powerline
+  file:
+    src: ~/.dotfiles/.config/powerline
+    dest: ~/.config/powerline
+    state: link
+    force: yes
 
