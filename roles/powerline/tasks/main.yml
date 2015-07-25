@@ -1,0 +1,8 @@
+---
+
+- name: Install powerline
+  command: pip install --user powerline-status
+
+- name: Create symlink for powerline
+  copy: src=~/.dotfiles/.config/powerline dest=~/.config/powerline
+
