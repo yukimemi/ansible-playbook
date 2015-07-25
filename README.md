@@ -19,10 +19,3 @@ xcode-select --install
 curl -L https://raw.githubusercontent.com/yukimemi/mac-ansible/master/i.sh | sh
 ```
 
-Copy and paste this
-===================
-```sh
-sudo xcodebuild -license
-xcode-select --install
-curl -L https://raw.githubusercontent.com/yukimemi/mac-ansible/master/i.sh | sh
-```
