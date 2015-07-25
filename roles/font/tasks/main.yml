@@ -7,7 +7,7 @@
 - name: Copy ttf files
   copy: src={{ item }} dest=~/Library/Fonts/
   with_fileglob:
-    - /usr/local/share/fonts/Ricty*.ttf
+    - /usr/local/share/fonts/Ricty*
   notify:
     - Rebuild font information cache
   when: ansible_os_family == "Darwin"
