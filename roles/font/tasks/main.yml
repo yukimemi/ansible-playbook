@@ -1,7 +1,7 @@
 ---
 
 - name: Install ricty font
-  homebrew: { name: ricty, install_options: powerline }
+  homebrew: { name: ricty, install_options: vim-powerline }
   when: ansible_os_family == "Darwin"
 
 - name: Copy ttf files
