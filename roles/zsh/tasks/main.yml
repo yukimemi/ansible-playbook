@@ -1,0 +1,17 @@
+---
+
+- name: Clone zprezto
+  git:
+    repo: git@github.com:yukimemi/prezto.git
+    dest: ~/.zprezto
+    recursive: yes
+
+- name: Create symlinks
+  file:
+    src: ~/.zprezto/runcoms/{{ item }}
+    dest: ~/.{{ item }}
+    state: link
+    force: yes
+  with_items: symlinks
+
+
