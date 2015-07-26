@@ -1,15 +1,14 @@
 ---
 
 symlinks:
-    - .bashrc
-    - .inputrc
-    - .gemrc
-    - .gitconfig
-    - .gitignore
-    - .peco-snippets
-    - .tmux.conf
-    - .vim
-    - .vimrc
-    - .gvimrc
-    - .vimperatorrc
+  - .bashrc
+  - .inputrc
+  - .gemrc
+  - .gitconfig
+  - .gitignore
+  - .peco-snippets
+  - .tmux.conf
+  - .vim
+  - .vimrc
+  - .gvimrc
 

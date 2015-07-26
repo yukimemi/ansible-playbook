@@ -1,0 +1,25 @@
+---
+
+- name: Create symlinks
+  file:
+    src: ~/.dotfiles/{{ item }}
+    dest: ~/{{ item }}
+    state: link
+    force: yes
+  with_items: symlinks
+
+- name: Mkdir .vimperator
+  file:
+    dest: ~/.vimperator
+    state: directory
+
+- name: Clone vimppm.js
+  git:
+    repo: https://github.com/cd01/vimppm.git
+    dest: ~/.vimperator/vimppm
+
+- name: Clone vimperator-colors
+  git:
+    repo: https://github.com/vimpr/vimperator-colors.git
+    dest: ~/.vimperator/colors
+
