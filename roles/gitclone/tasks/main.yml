@@ -1,0 +1,7 @@
+---
+
+- name: Clone scripts
+  git:
+    repo: git@bitbucket.org:yukimemi/scripts.git
+    dest: ~/bin/scripts
+

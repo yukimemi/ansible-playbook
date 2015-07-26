@@ -6,4 +6,5 @@
     - { role: homebrew-cask, when: ansible_os_family == "Darwin" }
     - { role: font }
     - { role: powerline }
+    - { role: gitclone }
 
