@@ -2,13 +2,13 @@
   connection: local
   roles:
     - { role: dotfiles }
-    - { role: homebrew, when: ansible_os_family == "Darwin" }
-    - { role: homebrew-cask, when: ansible_os_family == "Darwin" }
+    - { role: gitclone }
     - { role: powerline }
     - { role: zsh }
     - { role: vimperator }
+    - { role: font }
     - { role: karabiner, when: ansible_os_family == "Darwin" }
     - { role: bettertouchtool, when: ansible_os_family == "Darwin" }
-    - { role: gitclone }
-    - { role: font }
+    - { role: homebrew, when: ansible_os_family == "Darwin" }
+    - { role: homebrew-cask, when: ansible_os_family == "Darwin" }
 

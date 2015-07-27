@@ -2,11 +2,9 @@
 
 - name: Create symlink for Karabiner
   file:
-    src: ~/.dotfiles/mac/Karabiner/{{ item }}
-    dest: ~/Library/Application Support/Karabiner/{{ item }}
+    src: ~/.dotfiles/mac/Karabiner
+    dest: ~/Library/Application Support/Karabiner
     state: link
     force: yes
-  with_items:
-    - private.xml
   when: ansible_os_family == "Darwin"
 

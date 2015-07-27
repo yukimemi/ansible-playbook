@@ -1,7 +1,9 @@
 ---
 
 - name: Install powerline
-  command: pip install --user powerline-status
+  pip:
+    name: powerline-status
+    extra_args: --user
 
 - name: Create symlink for powerline
   file:
