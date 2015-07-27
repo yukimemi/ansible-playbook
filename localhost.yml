@@ -7,6 +7,8 @@
     - { role: powerline }
     - { role: zsh }
     - { role: vimperator }
+    - { role: karabiner, when: ansible_os_family == "Darwin" }
+    - { role: bettertouchtool, when: ansible_os_family == "Darwin" }
     - { role: gitclone }
     - { role: font }
 

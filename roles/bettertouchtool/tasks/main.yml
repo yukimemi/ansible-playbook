@@ -1,0 +1,10 @@
+---
+
+- name: Create symlink for BetterTouchTool
+  file:
+    src: ~/.dotfiles/mac/BetterTouchTool
+    dest: ~/Library/Application Support/BetterTouchTool
+    state: link
+    force: yes
+  when: ansible_os_family == "Darwin"
+
