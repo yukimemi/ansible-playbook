@@ -1,5 +1,14 @@
 ---
 
+- name: Check pip
+  command: pip
+  register: result
+  ignore_errors: True
+
+- name: Install pip
+  command: curl -kL https://bootstrap.pypa.io/get-pip.py | python
+  when: result|failed
+
 - name: Install pip module for powerline
   pip:
     name: "{{ item }}"
