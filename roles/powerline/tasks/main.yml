@@ -1,9 +1,10 @@
 ---
 
-- name: Install powerline
+- name: Install pip module for powerline
   pip:
-    name: powerline-status
+    name: "{{ item }}"
     extra_args: --user
+  with_items: pips
 
 - name: Create symlink for powerline
   file:

@@ -1,0 +1,6 @@
+---
+
+pips:
+  - powerline-status
+  - psutil
+
