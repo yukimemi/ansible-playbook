@@ -7,6 +7,7 @@ homebrew_repositories:
 homebrew_packages:
   - { name: ansible }
   - { name: coreutils }
+  - { name: gnu-sed }
   - { name: ctags }
   - { name: exiftool }
   - { name: ffmpeg }
