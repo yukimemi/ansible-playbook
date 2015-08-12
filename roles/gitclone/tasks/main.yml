@@ -10,7 +10,7 @@
     repo: git@bitbucket.org:yukimemi/scripts.git
     dest: ~/bin/scripts
 
-- naem: Clone private
+- name: Clone private
   git:
     repo: git@github.com:yukimemi/private.git
     dest: ~/.private
