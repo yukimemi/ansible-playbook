@@ -10,3 +10,16 @@
     repo: git@bitbucket.org:yukimemi/scripts.git
     dest: ~/bin/scripts
 
+- naem: Clone private
+  git:
+    repo: git@github.com:yukimemi/private.git
+    dest: ~/.private
+
+- name: Create private symlinks
+  file:
+    src: ~/.private/{{ item }}
+    dest: ~/{{ item }}
+    state: link
+    force: yes
+  with_items: private_symlinks
+
