@@ -15,6 +15,11 @@
     extra_args: --user
   with_items: pips
 
+- name: Mkdir .config
+  file:
+    dest: ~/.config
+    state: directory
+
 - name: Create symlink for powerline
   file:
     src: ~/.dotfiles/.config/powerline
