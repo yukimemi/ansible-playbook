@@ -17,10 +17,12 @@
   git:
     repo: https://github.com/vimpr/vimperator-colors.git
     dest: ~/.vimperator/colors
+    accept_hostkey: yes
 
 - name: Clone vimppm.js
   git:
     repo: https://github.com/cd01/vimppm.git
     dest: ~/.vimperator/vimppm
+    accept_hostkey: yes
 
 

@@ -4,6 +4,7 @@
   git:
     repo: git@github.com:yukimemi/dotfiles.git
     dest: ~/.dotfiles
+    accept_hostkey: yes
 
 - name: Create symlinks
   file:
