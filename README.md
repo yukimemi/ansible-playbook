@@ -16,6 +16,6 @@ xcode-select --install
 3. Copy and paste in terminal.
 ------------------------------
 ```sh
-curl -L https://raw.githubusercontent.com/yukimemi/mac-ansible/master/i.sh | sh
+curl -L http://git.io/yukimemi-ansible | sh
 ```
 
