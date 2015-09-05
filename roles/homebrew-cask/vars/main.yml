@@ -23,6 +23,7 @@ homebrew_cask_packages:
   - macwinzipper
   - makemkv
   - mplayerx
+  - vlc
   - nosleep
   - packer
   - quicksilver
