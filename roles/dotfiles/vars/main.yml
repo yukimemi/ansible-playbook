@@ -11,4 +11,5 @@ symlinks:
   - .vim
   - .vimrc
   - .gvimrc
+  - .atom
 
