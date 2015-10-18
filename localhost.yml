@@ -3,7 +3,6 @@
   roles:
     - { role: dotfiles }
     - { role: gitclone }
-    - { role: powerline }
     - { role: zsh }
     - { role: vimperator }
     - { role: karabiner, when: ansible_os_family == "Darwin" }
