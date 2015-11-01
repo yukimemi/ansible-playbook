@@ -2,7 +2,7 @@
 
 - name: Clone zprezto
   git:
-    repo: git@github.com:yukimemi/prezto.git
+    repo: https://github.com/yukimemi/prezto.git
     dest: ~/.zprezto
     accept_hostkey: yes
     recursive: yes

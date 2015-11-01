@@ -7,13 +7,13 @@
 
 - name: Clone scripts
   git:
-    repo: git@bitbucket.org:yukimemi/scripts.git
+    repo: https://bitbucket.org/yukimemi/scripts.git
     dest: ~/bin/scripts
     accept_hostkey: yes
 
 - name: Clone private
   git:
-    repo: git@github.com:yukimemi/private.git
+    repo: https://github.com/yukimemi/private.git
     dest: ~/.private
     accept_hostkey: yes
 

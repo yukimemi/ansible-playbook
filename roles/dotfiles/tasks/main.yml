@@ -2,7 +2,7 @@
 
 - name: Checkout my dotfiles
   git:
-    repo: git@github.com:yukimemi/dotfiles.git
+    repo: https://github.com/yukimemi/dotfiles.git
     dest: ~/.dotfiles
     accept_hostkey: yes
 
