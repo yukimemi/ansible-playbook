@@ -19,7 +19,7 @@ homebrew_packages:
   - { name: imagemagick }
   - { name: lua }
   - { name: lv }
-  - { name: macvim, install_options: [with-lua, override-system-vim], state: head }
+  - { name: macvim, install_options: [with-lua, with-override-system-vim], state: head }
   - { name: mercurial }
   - { name: mobile-shell }
   - { name: mplayer }
