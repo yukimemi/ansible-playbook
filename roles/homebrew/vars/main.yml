@@ -2,7 +2,6 @@
 
 homebrew_repositories:
   - sanemat/font
-  - b4b4r07/gomi
 
 homebrew_packages:
   - { name: ansible }
@@ -10,12 +9,11 @@ homebrew_packages:
   - { name: gnu-sed }
   - { name: ctags }
   - { name: exiftool }
-  - { name: ffmpeg }
+  - { name: ffmpeg, install_options: [with-faac, with-fdk-aac, with-libass, with-x265, with-tools]}
   - { name: fontforge }
   - { name: ghc }
   - { name: git }
   - { name: git-now }
-  - { name: gomi }
   - { name: imagemagick }
   - { name: lua }
   - { name: lv }
@@ -35,4 +33,5 @@ homebrew_packages:
   - { name: zsh, install_options: disable-etcdir }
   - { name: zsh-completions }
   - { name: haskell-stack }
+  - { name: source-highlight }
 
