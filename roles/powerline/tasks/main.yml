@@ -13,7 +13,7 @@
   pip:
     name: "{{ item }}"
     extra_args: --user
-  with_items: pips
+  with_items: '{{pips}}'
 
 - name: Mkdir .config
   file:

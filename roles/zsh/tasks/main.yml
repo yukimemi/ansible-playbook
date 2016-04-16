@@ -13,6 +13,6 @@
     dest: ~/.{{ item }}
     state: link
     force: yes
-  with_items: symlinks
+  with_items: '{{symlinks}}'
 
 

@@ -6,6 +6,4 @@
 
 - name: Copy ttf files
   copy: src=/usr/local/share/fonts/ dest=~/Library/Fonts/
-  notify:
-    - Rebuild font information cache
   when: ansible_os_family == "Darwin"

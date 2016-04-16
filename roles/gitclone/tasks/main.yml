@@ -23,5 +23,5 @@
     dest: ~/{{ item }}
     state: link
     force: yes
-  with_items: private_symlinks
+  with_items: '{{private_symlinks}}'
 

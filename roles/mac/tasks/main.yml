@@ -11,6 +11,6 @@
     dest: ~/Library/LaunchAgents/{{ item }}
     state: link
     force: yes
-  with_items: symlinks
+  with_items: '{{symlinks}}'
   when: ansible_os_family == "Darwin"
 
