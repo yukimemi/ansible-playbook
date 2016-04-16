@@ -8,9 +8,8 @@
 
 - name: Create symlinks
   file:
-    src: ~/.dotfiles/{{ item }}
-    dest: ~/{{ item }}
+    src: ~/.dotfiles/{{ symlinks }}
+    dest: ~/{{ symlinks }}
     state: link
     force: yes
-  with_items: symlinks
 
