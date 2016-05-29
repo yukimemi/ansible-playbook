@@ -2,6 +2,7 @@
 
 homebrew_repositories:
   - sanemat/font
+  - neovim/neovim
 
 homebrew_packages:
   - { name: ansible }
@@ -18,6 +19,7 @@ homebrew_packages:
   - { name: lua }
   - { name: lv }
   - { name: macvim, install_options: [with-lua, with-override-system-vim], state: head }
+  - { name: neovim }
   - { name: mercurial }
   - { name: mobile-shell }
   - { name: mplayer }

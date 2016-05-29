@@ -12,3 +12,8 @@
   homebrew: name={{ item.name }} install_options={{ item.options|default() }}
   with_items: '{{homebrew_packages}}'
   when: homebrew_packages
+
+- name: Create neovim symlinks
+  file: src=~/.dotfiles/.vim dest=~/.config/nvim state=link force=yes
+  file: src=~/.dotfiles/.vimrc dest=~/.config/nvim/init.vim state=link force=yes
+
