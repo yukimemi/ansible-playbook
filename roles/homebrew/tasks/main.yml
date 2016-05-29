@@ -15,5 +15,7 @@
 
 - name: Create neovim symlinks
   file: src=~/.dotfiles/.vim dest=~/.config/nvim state=link force=yes
+
+- name: Create neovim symlinks
   file: src=~/.dotfiles/.vimrc dest=~/.config/nvim/init.vim state=link force=yes
 
