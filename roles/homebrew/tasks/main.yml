@@ -13,6 +13,3 @@
   with_items: '{{homebrew_packages}}'
   when: homebrew_packages
 
-- name: Create neovim symlinks
-  file: src=~/.dotfiles/.config/nvim dest=~/.config/nvim state=link force=yes
-
