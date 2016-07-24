@@ -20,6 +20,6 @@
 - name: Create vimrc symlinks using neovim config.
   file: src=~/.dotfiles/.config/nvim/init.vim dest=~/.vimrc state=link force=yes
 
-- name: Create dein.toml symlinks using neovim config.
-  file: src=~/.dotfiles/.config/nvim/dein.toml dest=~/.vim/dein.toml state=link force=yes
+- name: Create vim symlinks using neovim config.
+  file: src=~/.dotfiles/.config/nvim dest=~/.vim state=link force=yes
 
