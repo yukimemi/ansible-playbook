@@ -6,7 +6,7 @@ homebrew_cask_repositories:
 homebrew_cask_packages:
   - appcleaner
   - atom
-  - bittorrent-sync
+  - resilio-sync
   - caffeine
   - clipmenu
   - dropbox
