@@ -6,6 +6,11 @@
     dest: ~/.dotfiles
     accept_hostkey: yes
 
+- name: Mkdir ~/.config
+  file:
+    dest: ~/.config
+    state: directory
+
 - name: Create symlinks
   file:
     src: ~/.dotfiles/{{ item }}
