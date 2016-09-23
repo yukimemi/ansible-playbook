@@ -35,7 +35,5 @@ homebrew_packages:
   - { name: youtube-dl }
   - { name: zsh, install_options: disable-etcdir }
   - { name: zsh-completions }
-  - { name: haskell-stack }
   - { name: source-highlight }
-  - { name: haskell-stack }
 
