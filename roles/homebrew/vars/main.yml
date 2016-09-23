@@ -36,4 +36,5 @@ homebrew_packages:
   - { name: zsh, install_options: disable-etcdir }
   - { name: zsh-completions }
   - { name: source-highlight }
+  - { name: packer }
 

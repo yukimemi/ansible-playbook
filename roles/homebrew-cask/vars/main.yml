@@ -24,7 +24,6 @@ homebrew_cask_packages:
   - mplayerx
   - vlc
   - nosleep
-  - packer
   - quicksilver
   - seil
   - skype
