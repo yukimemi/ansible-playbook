@@ -3,6 +3,7 @@
 homebrew_repositories:
   - sanemat/font
   - neovim/neovim
+  - homebrew/dupes
 
 homebrew_packages:
   - { name: ansible }
@@ -37,4 +38,5 @@ homebrew_packages:
   - { name: zsh-completions }
   - { name: source-highlight }
   - { name: packer }
+  - { name: grep }
 
