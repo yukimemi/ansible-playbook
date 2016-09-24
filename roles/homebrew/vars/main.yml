@@ -10,6 +10,7 @@ homebrew_packages:
   - { name: coreutils }
   - { name: gnu-sed }
   - { name: ctags }
+  - { name: go }
   - { name: exiftool }
   - { name: ffmpeg, install_options: [with-faac, with-fdk-aac, with-libass, with-x265, with-tools]}
   - { name: fontforge }
@@ -20,8 +21,8 @@ homebrew_packages:
   - { name: lua }
   - { name: lv }
   - { name: macvim, install_options: [with-lua, with-override-system-vim], state: head }
-  - { name: neovim }
   - { name: python3 }
+  - { name: neovim }
   - { name: mercurial }
   - { name: mobile-shell }
   - { name: mplayer }
