@@ -40,4 +40,5 @@ homebrew_packages:
   - { name: source-highlight }
   - { name: packer }
   - { name: grep }
+  - { name: mas }
 
