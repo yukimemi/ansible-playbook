@@ -31,4 +31,5 @@ homebrew_cask_packages:
   - virtualbox
   - xquartz
   - lastpass
+  - tickeys
 
