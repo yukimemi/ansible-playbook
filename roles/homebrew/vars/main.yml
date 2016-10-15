@@ -20,7 +20,7 @@ homebrew_packages:
   - { name: imagemagick }
   - { name: lua }
   - { name: lv }
-  - { name: macvim, install_options: [with-lua, with-override-system-vim], state: head }
+  - { name: macvim, install_options: [with-lua, with-override-system-vim, --with-python3], state: head }
   - { name: python3 }
   - { name: neovim }
   - { name: mercurial }
