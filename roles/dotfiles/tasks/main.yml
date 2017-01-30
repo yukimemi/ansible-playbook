@@ -28,3 +28,10 @@
 - name: Create vim symlinks using neovim config.
   file: src=~/.dotfiles/.config/nvim dest=~/.vim state=link force=yes
 
+- name: Create fish symlinks.
+  file:
+    src: ~/.dotfiles/.config/fish/{{ item }}
+    dest: ~/.config/fish/{{ item }}
+    state: link
+    force: yes
+  with_items: '{{fishes}}'

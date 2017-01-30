@@ -14,31 +14,22 @@ homebrew_packages:
   - { name: exiftool }
   - { name: ffmpeg, install_options: [with-faac, with-fdk-aac, with-libass, with-x265, with-tools]}
   - { name: fontforge }
-  - { name: ghc }
   - { name: git }
-  - { name: git-now }
   - { name: imagemagick }
   - { name: lua }
   - { name: lv }
-  - { name: macvim, install_options: [with-lua, with-override-system-vim, --with-python3], state: head }
   - { name: python3 }
+  - { name: macvim, install_options: [with-lua, with-override-system-vim, with-python3], state: head }
   - { name: neovim }
-  - { name: mercurial }
   - { name: mobile-shell }
-  - { name: mplayer }
-  - { name: nkf }
   - { name: reattach-to-user-namespace }
   - { name: ssh-copy-id }
   - { name: tig }
   - { name: tmux }
-  - { name: tree }
-  - { name: watch }
-  - { name: wget }
   - { name: youtube-dl }
-  - { name: zsh, install_options: disable-etcdir }
-  - { name: zsh-completions }
   - { name: source-highlight }
   - { name: packer }
   - { name: grep }
   - { name: mas }
+  - { name: fish }
 

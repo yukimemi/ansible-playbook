@@ -14,3 +14,8 @@ symlinks:
   - .atom
   - .editorconfig
 
+fishes:
+  - config.fish
+  - fishfile
+  - my_functions
+
