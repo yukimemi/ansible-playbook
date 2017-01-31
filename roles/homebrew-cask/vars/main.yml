@@ -10,26 +10,26 @@ homebrew_cask_packages:
   - caffeine
   - clipmenu
   - dropbox
-  - evernote
+  # - evernote
   - firefox
-  - flashlight
-  - flux
+  # - flashlight
+  # - flux
   - google-chrome
   - google-drive
   - google-japanese-ime
   - iterm2
-  - karabiner
+  # - karabiner
   - macwinzipper
   - makemkv
   - mplayerx
   - vlc
   - nosleep
-  - quicksilver
-  - seil
+  # - quicksilver
+  # - seil
   - skype
   - vagrant
   - virtualbox
-  - xquartz
-  - lastpass
+  # - xquartz
+  # - lastpass
   - tickeys
 

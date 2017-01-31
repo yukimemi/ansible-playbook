@@ -35,3 +35,6 @@
     state: link
     force: yes
   with_items: '{{fishes}}'
+
+- name: Create vimfx symlinks.
+  file: src=~/.dotfiles/.config/vimfx dest=~/.config/vimfx state=link force=yes

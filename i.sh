@@ -6,20 +6,23 @@
 
 set -e
 
-command rm -rf ~/.tmp
-mkdir ~/.tmp
-pushd ~/.tmp
+# Install ghq.
+if ! which ghq > /dev/null; then
+  curl -L git.io/cli | L=motemen/ghq sh
+fi
 
-git clone https://github.com/yukimemi/mac-ansible.git
-pushd mac-ansible
+ghq get https://github.com/yukimemi/ansible-playbook.git
+pushd ~/.ghq/src/github.com/yukimemi/ansible-playbook
 
-# Install homebrew
+# Install homebrew.
 if ! type brew > /dev/null; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-brew install python
-brew install ansible
+# Install ansible.
+if ! type ansible-playbook > /dev/null; then
+  brew install python
+fi
 
 HOMEBREW_CASK_OPTS="--appdir=/Applications" ansible-playbook localhost.yml -i hosts
 

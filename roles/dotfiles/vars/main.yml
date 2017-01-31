@@ -6,16 +6,15 @@ symlinks:
   - .gemrc
   - .gitconfig
   - .gitignore
-  - .peco-snippets
+  - .shell-snippets
   - .tmux.conf
-  - .vim
-  - .vimrc
   - .gvimrc
   - .atom
-  - .editorconfig
 
 fishes:
   - config.fish
   - fishfile
   - my_functions
 
+vimfx:
+  - vimfx
