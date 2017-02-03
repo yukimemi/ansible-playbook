@@ -32,4 +32,5 @@ homebrew_cask_packages:
   # - xquartz
   # - lastpass
   - tickeys
+  - hammerspoon
 

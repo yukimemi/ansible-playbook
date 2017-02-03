@@ -14,3 +14,5 @@
   with_items: '{{symlinks}}'
   when: ansible_os_family == "Darwin"
 
+- name: Create hammerspoon symlinks.
+  file: src=~/.dotfiles/mac/hammerspoon dest=~/.hammerspoon state=link force=yes

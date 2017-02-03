@@ -38,3 +38,4 @@
 
 - name: Create vimfx symlinks.
   file: src=~/.dotfiles/.config/vimfx dest=~/.config/vimfx state=link force=yes
+
