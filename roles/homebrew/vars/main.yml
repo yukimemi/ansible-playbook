@@ -25,11 +25,12 @@ homebrew_packages:
   - { name: reattach-to-user-namespace }
   - { name: ssh-copy-id }
   - { name: tig }
-  - { name: tmux }
+  - { name: tmux, install_options: [with-utf8proc], state: head }
   - { name: youtube-dl }
   - { name: source-highlight }
   - { name: packer }
   - { name: grep }
   - { name: mas }
   - { name: fish }
+  - { name: zsh, install_options: [with-unicode9, without-etcdir] }
 

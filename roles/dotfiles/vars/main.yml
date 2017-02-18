@@ -10,11 +10,13 @@ symlinks:
   - .tmux.conf
   - .gvimrc
   - .atom
+  - .zshenv
+  - .zshrc
 
 fishes:
   - config.fish
-  - fishfile
-  - my_functions
+  - plugins.fish
+  - functions
 
 vimfx:
   - vimfx

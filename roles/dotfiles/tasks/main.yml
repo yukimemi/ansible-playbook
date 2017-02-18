@@ -39,3 +39,6 @@
 - name: Create vimfx symlinks.
   file: src=~/.dotfiles/.config/vimfx dest=~/.config/vimfx state=link force=yes
 
+- name: Create stack symlinks.
+  file: src=~/.dotfiles/.stack/config.yaml dest=~/.stack/config.yaml state=link force=yes
+
