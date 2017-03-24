@@ -3,7 +3,7 @@
 - name: Checkout my dotfiles
   git:
     repo: https://github.com/yukimemi/dotfiles.git
-    dest: ~/.dotfiles
+    dest: ~/.ghq/src/github.com/yukimemi/dotfiles
     accept_hostkey: yes
 
 - name: Mkdir ~/.config
@@ -13,32 +13,32 @@
 
 - name: Create symlinks
   file:
-    src: ~/.dotfiles/{{ item }}
+    src: ~/.ghq/src/github.com/yukimemi/dotfiles/{{ item }}
     dest: ~/{{ item }}
     state: link
     force: yes
   with_items: '{{symlinks}}'
 
 - name: Create neovim symlinks
-  file: src=~/.dotfiles/.config/nvim dest=~/.config/nvim state=link force=yes
+  file: src=~/.ghq/src/github.com/yukimemi/dotfiles/.config/nvim dest=~/.config/nvim state=link force=yes
 
 - name: Create vimrc symlinks using neovim config.
-  file: src=~/.dotfiles/.config/nvim/init.vim dest=~/.vimrc state=link force=yes
+  file: src=~/.ghq/src/github.com/yukimemi/dotfiles/.config/nvim/init.vim dest=~/.vimrc state=link force=yes
 
 - name: Create vim symlinks using neovim config.
-  file: src=~/.dotfiles/.config/nvim dest=~/.vim state=link force=yes
+  file: src=~/.ghq/src/github.com/yukimemi/dotfiles/.config/nvim dest=~/.vim state=link force=yes
 
 - name: Create fish symlinks.
   file:
-    src: ~/.dotfiles/.config/fish/{{ item }}
+    src: ~/.ghq/src/github.com/yukimemi/dotfiles/.config/fish/{{ item }}
     dest: ~/.config/fish/{{ item }}
     state: link
     force: yes
   with_items: '{{fishes}}'
 
 - name: Create vimfx symlinks.
-  file: src=~/.dotfiles/.config/vimfx dest=~/.config/vimfx state=link force=yes
+  file: src=~/.ghq/src/github.com/yukimemi/dotfiles/.config/vimfx dest=~/.config/vimfx state=link force=yes
 
 - name: Create stack symlinks.
-  file: src=~/.dotfiles/.stack/config.yaml dest=~/.stack/config.yaml state=link force=yes
+  file: src=~/.ghq/src/github.com/yukimemi/dotfiles/.stack/config.yaml dest=~/.stack/config.yaml state=link force=yes
 

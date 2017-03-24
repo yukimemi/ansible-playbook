@@ -1,18 +1,4 @@
 ---
 
-- name: Mkdir ~/Library/LaunchAgents
-  file:
-    dest: ~/Library/LaunchAgents
-    state: directory
-
-- name: Create symlink for LaunchAgents
-  file:
-    src: ~/.dotfiles/mac/{{ item }}
-    dest: ~/Library/LaunchAgents/{{ item }}
-    state: link
-    force: yes
-  with_items: '{{symlinks}}'
-  when: ansible_os_family == "Darwin"
-
 - name: Create hammerspoon symlinks.
-  file: src=~/.dotfiles/mac/hammerspoon dest=~/.hammerspoon state=link force=yes
+  file: src=~/.ghq/src/github.com/yukimemi/dotfiles/mac/hammerspoon dest=~/.hammerspoon state=link force=yes
