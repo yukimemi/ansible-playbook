@@ -14,14 +14,17 @@
 - name: Clone private
   git:
     repo: https://github.com/yukimemi/private.git
-    dest: ~/.private
+    dest: ~/.ghq/src/github.com/yukimemi/private
     accept_hostkey: yes
 
 - name: Create private symlinks
   file:
-    src: ~/.private/{{ item }}
+    src: ~/.ghq/src/github.com/yukimemi/private/{{ item }}
     dest: ~/{{ item }}
     state: link
     force: yes
   with_items: '{{private_symlinks}}'
+
+- name: Create pet symlinks
+  file: src=~/.ghq/src/github.com/yukimemi/private/.config/pet dest=~/.config/pet state=link force=yes
 
