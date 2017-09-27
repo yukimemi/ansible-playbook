@@ -11,6 +11,16 @@
     dest: ~/.config
     state: directory
 
+- name: Mkdir ~/.config/fish
+  file:
+    dest: ~/.config/fish
+    state: directory
+
+- name: Mkdir ~/.stack
+  file:
+    dest: ~/.stack
+    state: directory
+
 - name: Create symlinks
   file:
     src: ~/.ghq/src/github.com/yukimemi/dotfiles/{{ item }}
