@@ -16,13 +16,14 @@ pushd ~/.ghq/src/github.com/yukimemi/ansible-playbook
 
 # Install homebrew.
 if ! type brew > /dev/null; then
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  brew doctor
 fi
 
 # Install ansible.
 if ! type ansible-playbook > /dev/null; then
-  brew install python
+  brew install ansible
 fi
 
-HOMEBREW_CASK_OPTS="--appdir=/Applications" ansible-playbook localhost.yml -i hosts
+ansible-playbook localhost.yml -i hosts
 

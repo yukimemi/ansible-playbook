@@ -4,9 +4,9 @@ homebrew_cask_repositories:
   - caskroom/versions
 
 homebrew_cask_packages:
-  - appcleaner
+  # - appcleaner
   - atom
-  - resilio-sync
+  # - resilio-sync
   - caffeine
   - clipmenu
   - dropbox
@@ -15,18 +15,18 @@ homebrew_cask_packages:
   # - flashlight
   # - flux
   - google-chrome
-  - google-drive
+  # - google-drive
   - google-japanese-ime
   - iterm2
   # - karabiner
-  - macwinzipper
-  - makemkv
-  - mplayerx
+  # - macwinzipper
+  # - makemkv
+  # - mplayerx
   - vlc
-  - nosleep
+  # - nosleep
   # - quicksilver
   # - seil
-  - skype
+  # - skype
   - vagrant
   - virtualbox
   # - xquartz
