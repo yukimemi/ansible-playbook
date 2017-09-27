@@ -12,12 +12,12 @@ homebrew_packages:
   - { name: ctags }
   - { name: go }
   - { name: exiftool }
-  - { name: ffmpeg, install_options: [with-faac, with-fdk-aac, with-libass, with-x265, with-tools]}
-  - { name: fontforge }
+    # - { name: ffmpeg, install_options: [with-faac, with-fdk-aac, with-libass, with-x265, with-tools]}
+    # - { name: fontforge }
   - { name: git }
   - { name: imagemagick }
   - { name: lua }
-  - { name: lv }
+    # - { name: lv }
   - { name: python3 }
   - { name: macvim, install_options: [with-lua, with-override-system-vim, with-python3], state: head }
   - { name: neovim }
@@ -28,9 +28,9 @@ homebrew_packages:
   - { name: tmux, install_options: [with-utf8proc], state: head }
   - { name: youtube-dl }
   - { name: source-highlight }
-  - { name: packer }
+    # - { name: packer }
   - { name: grep }
-  - { name: mas }
-  - { name: fish }
+    # - { name: mas }
+    # - { name: fish }
   - { name: zsh, install_options: [with-unicode9, without-etcdir] }
 
