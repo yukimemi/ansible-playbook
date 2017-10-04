@@ -33,5 +33,6 @@ homebrew_cask_packages:
   # - lastpass
   - tickeys
   - hammerspoon
+  - docker
   - font-ricty-diminished
 

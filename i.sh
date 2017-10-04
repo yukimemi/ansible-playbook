@@ -6,18 +6,12 @@
 
 set -e
 
-# Install ghq.
-if ! which ghq > /dev/null; then
-  curl -L git.io/cli | L=motemen/ghq sh
-fi
-
-ghq get https://github.com/yukimemi/ansible-playbook.git
+[ -d ~/.ghq/src/github.com/yukimemi/ansible-playbook ] || git clone https://github.com/yukimemi/ansible-playbook.git ~/.ghq/src/github.com/yukimemi/ansible-playbook
 pushd ~/.ghq/src/github.com/yukimemi/ansible-playbook
 
 # Install homebrew.
 if ! type brew > /dev/null; then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  brew doctor
 fi
 
 # Install ansible.
