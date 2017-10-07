@@ -4,6 +4,7 @@ homebrew_repositories:
   - sanemat/font
   - neovim/neovim
   - homebrew/dupes
+  - knqyf263/pet
 
 homebrew_packages:
   - { name: ansible }
@@ -33,4 +34,6 @@ homebrew_packages:
     # - { name: mas }
     # - { name: fish }
   - { name: zsh, install_options: [with-unicode9, without-etcdir] }
+  - { name: pet }
+  - { name: peco }
 
