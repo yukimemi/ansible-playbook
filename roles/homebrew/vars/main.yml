@@ -34,6 +34,7 @@ homebrew_packages:
     # - { name: mas }
     # - { name: fish }
   - { name: zsh, install_options: [with-unicode9, without-etcdir] }
+  - { name: git-now }
   - { name: pet }
   - { name: peco }
 

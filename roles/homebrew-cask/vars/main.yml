@@ -35,5 +35,6 @@ homebrew_cask_packages:
   - hammerspoon
   - docker
   - font-ricty-diminished
-  - font-hack
+  # - font-hack
+  - font-hack-nerd-font
 
