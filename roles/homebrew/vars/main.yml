@@ -37,4 +37,5 @@ homebrew_packages:
   - { name: git-now }
   - { name: pet }
   - { name: peco }
+  - { name: fd }
 

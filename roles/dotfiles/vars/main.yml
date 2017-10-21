@@ -12,6 +12,7 @@ symlinks:
   - .atom
   - .zshenv
   - .zshrc
+  - .ctags
 
 fishes:
   - config.fish
